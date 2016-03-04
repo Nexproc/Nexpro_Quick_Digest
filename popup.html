@@ -1,0 +1,27 @@
+<!doctype html>
+<html style="width: 400px; padding: 20px; padding-top: 0px;">
+    <head>
+        <title>Nexpro Quick Digest</title>
+        <script src="./assets/jquery-2.2.1.min.js"></script>
+        <script src="./assets/sha256.js"></script>
+        <link rel="stylesheet" href="./assets/bootstrap-3.3.6-dist/css/bootstrap.min.css">
+        <script src="./assets/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+        <script src="./assets/main.js"></script>
+    </head>
+    <body>
+        <div style="float: left;">
+            <h3>Salt*</h3>
+            <h6>(Used to randomize your input)</h6>
+            <input id="salt" type="text" placeholder="salt"></input>
+        </div>
+        <div style="float: right;">
+            <h3>Text to Digest</h3>
+            <h6><br/></h6>
+            <input id="input" type="text" placeholder="to be digested"></input><br/><br/>
+        </div>
+        <div style="width: 100%;">
+            <div class="btn btn-success" id="digest-it" style="position: relative; left: 10%; width: 80%;">Digest!</div>
+            <h6 style="position: relative; left: 25%;">Your digest: <input id="digest" disabled="disabled" type="text"></input></h6>
+        <div>
+    </body>
+</html>
