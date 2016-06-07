@@ -51,6 +51,6 @@ document.addEventListener('DOMContentLoaded', function() {
       var binarySalt = convertToBinary(salt.val());
       var binaryInput = convertToBinary(input.val());
       var xor = largeXor(binarySalt, binaryInput);
-      digestBox.val(window.Sha256.hash(xor));
+      digestBox.val(window.Sha256.hash(salt.val() + input.val()));
   });
 });
